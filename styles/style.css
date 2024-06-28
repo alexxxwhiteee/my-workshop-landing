@@ -52,7 +52,6 @@ html
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
-    
 }
 
 body
@@ -75,8 +74,7 @@ header
 
 .header__logo
 {
-
-   min-width: 20%; 
+    min-width: 20%; 
 }
 
 .header__logo__img
@@ -93,7 +91,6 @@ header
     display:flex;
     width: 500px;
     justify-content: center;
-    
 }
 
 .header__nav__button
@@ -113,6 +110,7 @@ header
     text-decoration: none;
     font-weight: 200;
 }
+
 
 @media screen and (max-width: 659px) {
     .header__logo
@@ -173,6 +171,7 @@ nav {
     background-color: #fff;
     color: black;
     width: 150px;
+    font-weight: 600;
 }
 
 footer
@@ -192,13 +191,11 @@ footer
     flex-wrap: wrap;
     width: 100%;
     padding-bottom: 3%;
-    
 }
 
 .footer__logo
 {
    min-width: 40%; 
-  
 }
 
 .footer__logo__img
@@ -226,15 +223,15 @@ footer
   }
 
   @media screen and (max-width: 479px) {
-    .contacts,
-    .social
+    .footer__contacts,
+    .footer__social
 {
     width: 100%;
   }
 }
 
-.contacts,
-.social
+.footer__contacts,
+.footer__social
 {
     min-width: 30%;
     flex-wrap: wrap;
@@ -253,8 +250,8 @@ h3
     padding-bottom: 1%;
 }
 
-.contacts a,
-.social a
+.footer__contacts a,
+.footer__social a
 {
     min-width: 170px;
     margin: 1%;
@@ -272,14 +269,14 @@ h3
     font-size: 14px;
 }
 
-.contacts__map
+.footer__contacts__map
 {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.contacts__map::before 
+.footer__contacts__map::before 
 {
     content: "";
     background-image: url('/images/icons/map-icon.png');
@@ -290,14 +287,14 @@ h3
     left:-40px;
 }
 
-.contacts__phone
+.footer__contacts__phone
 {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.contacts__phone::before 
+.footer__contacts__phone::before 
 {
     content: "";
     background-image: url('/images/icons/phone-icon.png');
@@ -308,14 +305,14 @@ h3
     left:-40px;
 }
 
-.contacts__mail
+.footer__contacts__mail
 {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.contacts__mail::before 
+.footer__contacts__mail::before 
 {
     content: "";
     background-image: url('/images/icons/mail-icon.png');
@@ -326,14 +323,14 @@ h3
     left:-39px;
 }
 
-.social__vk
+.footer__social__vk
 {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.social__vk::before 
+.footer__social__vk::before 
 {
     content: "";
     background-image: url('/images/icons/vk-icon.png');
@@ -344,14 +341,14 @@ h3
     left:-38px;
 }
 
-.social__tg
+.footer__social__tg
 {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.social__tg::before 
+.footer__social__tg::before 
 {
     content: "";
     background-image: url('/images/icons/tg-icon.png');
@@ -362,14 +359,14 @@ h3
     left:-35px;
 }
 
-.social__lm
+.footer__social__lm
 {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.social__lm::before 
+.footer__social__lm::before 
 {
     content: "";
     background-image: url('/images/icons/lm-icon.png');
@@ -380,14 +377,14 @@ h3
     left:-35px;
 }
 
-.social__yt
+.footer__social__yt
 {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.social__yt::before 
+.footer__social__yt::before 
 {
     content: "";
     background-image: url('/images/icons/youtube-icon.png');
@@ -397,3 +394,4 @@ h3
     position: absolute;
     left:-37px;
 }
+
