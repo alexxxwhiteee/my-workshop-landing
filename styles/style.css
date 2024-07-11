@@ -31,34 +31,6 @@ html
     font-style: normal;
 }
 
-/* @media screen and (max-width: 1070px) {
-    html
-{
-    scroll-padding-top: 7.5%;
-  }
-}
-
-@media screen and (max-width: 611px) {
-    html
-{
-    scroll-padding-top: 11%;
-  }
-}
-
-@media screen and (max-width: 458px) {
-    html
-{
-    scroll-padding-top: 14.5%;
-  }
-}
-
-@media screen and (max-width: 305px) {
-    html
-{
-    scroll-padding-top: 25%;
-  }
-} */
-
 body
 {
     margin: 0;
@@ -152,7 +124,7 @@ nav {
     position: sticky;
     top: 0px;
     z-index: 1000;
-    box-shadow: black 5px 5px 20px -10px, rgb(0, 0, 0) -5px -5px 20px -10px;
+    box-shadow: black 0px 12px 20px -10px;
 }
 
 .nav__button {
@@ -178,10 +150,10 @@ nav {
     color: black;
     width: 150px;
     font-weight: 800;
-    box-shadow: black 5px 5px 20px -10px, rgb(0, 0, 0) -5px -5px 20px -10px;
+    box-shadow: black 5px 5px 20px -10px, black -5px -5px 20px -10px;
 }
 
-@media screen and (max-width: 1176px) {
+@media screen and (max-width: 1206px) {
     nav
     {
         gap: 0px;
@@ -223,7 +195,7 @@ nav {
     font-weight: 100;
     font-size: 20px;
     line-height: 25px;
-    width: 67%;
+    width: 65%;
     display: flex;
     text-align: center;
     align-items: center;
@@ -231,7 +203,7 @@ nav {
     z-index: 100;
 }
 
-@media screen and (max-width: 1189px) {
+@media screen and (max-width: 1206px) {
     .about
     {
         display: block;
@@ -269,24 +241,182 @@ nav {
 
 
 
+
+
+
+
+
+
+
+
+
+
+.goods
+{
+    z-index: 900;
+    border: 1px solid red;
+    position: relative;
+    box-shadow: black 0px -12px 20px -10px, black 0px 12px 20px -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.order-info
+{   
+    min-height: 230px;
+    background-color: black;
+    display: flex;
+    overflow: hidden;
+    padding: 2% 3% 2% 3%;
+    justify-content: space-between;
+    box-shadow: black 0px 12px 20px -10px;
+}
+
+.order-info__logo
+{   
+    display: flex;  
+}
+
+.order-info__logo__img
+{
+    position: relative;
+    top: -22px;
+    left: -25px;
+    height: 200px;
+    scale: 3;
+    rotate: 40deg;
+}
+
+.order-info__text
+{   
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 25px;
+    width: 65%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color:  white;
+    z-index: 100;
+}
+
+@media screen and (max-width: 1085px) {
+    .order-info__text
+    {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .order-info__text
+    {
+        width: 80%;
+    }
+    .order-info__logo__img
+    {
+        left: 15px;
+    }
+}
+
+@media screen and (max-width: 881px) {
+    .order-info__logo__img
+    {
+        top: -10px;
+    }
+}
+
+@media screen and (max-width: 807px) {
+    .order-info
+    {
+        display: grid;
+    }
+    .order-info__text
+    {
+        grid-area: 1 / 1;
+        width: 100%;
+    }
+    .order-info__logo
+    {
+        grid-area: 1 / 1;
+        display: grid;
+        place-items: center end;
+    }
+    .order-info__logo__img
+    {
+        padding-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .order-info__logo__img
+    {
+        padding-bottom: 3.5%;
+    }
+}
+
+@media screen and (max-width: 637px) {
+    .order-info__logo__img
+    {
+        padding-bottom: 4%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .order-info__logo
+    {
+        place-items: center center;
+    }
+    .order-info__logo__img
+    {
+        rotate: 0deg;
+        padding-bottom: 0%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .order-info__logo__img
+    {
+        left: 20px;
+    }
+}
+
 h2
 {
     text-align: center;
     margin-bottom: 0;
     font-weight: 300;
     font-size: 250%;
+    margin-top: 0%;
+    padding-top: 2%;
 }
 
 .delivery-and-payment
 {
-    margin-top:900px;
-    margin-bottom: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+    position: relative;
+    z-index: 900;
+    box-shadow: black 0px -12px 20px -10px;
 }
 
 .delivery-and-payment__info
 {
+    margin: 0% 5% 2% 5%;
     display: flex;
     flex-direction: column;
     border-top: 2px solid black;
