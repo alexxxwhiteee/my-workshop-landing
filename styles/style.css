@@ -22,7 +22,7 @@ html
 {
     background-color: white;
     scroll-behavior: smooth;
-    scroll-padding-top: 6%;
+    scroll-padding-top: 3%;
     scrollbar-width: none;
     scrollbar-color: black white;
     font-family: "Overpass", sans-serif;
@@ -36,6 +36,55 @@ body
     margin: 0;
 }
 
+h2
+{
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 250%;
+    margin-top: 0%;
+    padding-top: 2%;
+}
+
+h4
+{
+   font-size: large;
+   font-weight: 400;
+   font-size: 20px;
+   position: relative;
+   text-align: center;
+}
+
+h4::before {
+    content: "";
+    border-bottom: 1px solid black;
+    width: 100px;
+    height: 0.5em;
+    position: absolute;
+    top: 0px;
+    margin-left: -115px;
+}
+  h4::after {
+    content: "";
+    border-bottom: 1px solid black;
+    width: 100px;
+    height: 0.5em;
+    position: absolute;
+    top: 0px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    h4
+    {
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    h4::before,
+    h4::after {
+        all: initial;
+    }
+}
 
 header
 {
@@ -73,7 +122,7 @@ header
 {
     flex:auto;
     background-color: black;
-    color:white;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,6 +134,13 @@ header
     min-height: 40px;
     text-decoration: none;
     font-weight: 200;
+}
+
+.header__nav__button:hover
+{
+    color: black;
+    background-color: white;
+    font-size: 17px;
 }
 
 
@@ -149,7 +205,7 @@ nav {
     background-color: #fff;
     color: black;
     width: 150px;
-    font-weight: 800;
+    font-weight: 700;
     box-shadow: black 5px 5px 20px -10px, black -5px -5px 20px -10px;
 }
 
@@ -177,12 +233,13 @@ nav {
     overflow: hidden;
     padding: 2% 3% 2% 0%;
     justify-content: space-between;
+    box-shadow: black 0px 12px 20px -10px;
 }
 
 .about__logo
 {      
     background: url('/images/about__logo__img.jpg') no-repeat;
-    box-shadow: inset 0px 0px 20px 30px rgba(0,0,0,0.9);
+    box-shadow: inset 0px 0px 20px 30px black;
     width: 400px;
     height: 300px;
     background-size: 400px auto;
@@ -251,13 +308,229 @@ nav {
 
 
 
+
+
+
 .goods
 {
     z-index: 900;
-    border: 1px solid red;
     position: relative;
     box-shadow: black 0px -12px 20px -10px, black 0px 12px 20px -10px;
+    padding-bottom: 2%;
 }
+
+.product-description
+{
+    font-weight: 200;
+    font-size: 19px;
+}
+
+.product-description__size
+{
+    font-weight: 400;
+}
+
+.order-button
+{
+    width: 180px;
+    height: 50px;
+    color:white;
+    background-color: black;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.order-button:hover,
+.order-button:focus
+{
+    color:black;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 22px;
+}
+
+.wallets
+{
+    margin: 0% 5% 0% 5%;
+}
+
+.custom-japanese-wallet
+{
+    border-top: 2px solid black;
+    border-bottom: 2px dashed black;
+}
+
+.custom-japanese-wallet__info
+{
+    display: flex;
+    padding-bottom: 2%;
+}
+
+.custom-japanese-wallet__photoes
+{
+    height: 400px;
+    width: 40%;
+    display: flex;
+}
+
+.custom-japanese-wallet__photoes__secondary
+{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-japanese-wallet__photoes__secondary__1st__img,
+.custom-japanese-wallet__photoes__secondary__2nd__img,
+.custom-japanese-wallet__photoes__secondary__3rd__img
+{
+    width: 100%;
+    max-height: 130px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+
+.custom-japanese-wallet__photoes__secondary__1st__img:hover,
+.custom-japanese-wallet__photoes__secondary__2nd__img:hover,
+.custom-japanese-wallet__photoes__secondary__3rd__img:hover
+{
+    scale: 1.2;
+    box-shadow: 0px 3px 21px -3px black;
+}
+.custom-japanese-wallet__photoes__main
+{
+    padding: 0 0 0 7%;
+}
+
+.custom-japanese-wallet__photoes__main__img
+{
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.custom-japanese-wallet__photoes__main__img:hover
+{
+    scale: 1.05;
+    box-shadow: 0px 5px 21px -3px black;
+}
+
+.custom-japanese-wallet__description-and-order__button
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1800px) {
+    .custom-japanese-wallet__photoes__secondary__1st__img
+    {
+        max-width: 100px;;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .custom-japanese-wallet__description-and-order__button
+    {
+        width: 50%;
+    }
+        .custom-japanese-wallet__photoes
+    {
+        width: 50%;
+        display: flex;
+    }
+    .custom-japanese-wallet__photoes__main
+    {
+        padding: 0 0 0 5%;
+    }
+    .custom-japanese-wallet__photoes__secondary
+    {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .custom-japanese-wallet__info
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .custom-japanese-wallet__photoes,
+    .custom-japanese-wallet__description-and-order__button
+    {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .custom-japanese-wallet__photoes
+    {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .custom-japanese-wallet__description-and-order__button
+    {
+        padding-top: 15px;
+    }
+    .order-button
+    {
+        margin-top: 15px;
+    }
+    .custom-japanese-wallet__photoes__main
+    {
+        height: 300px;
+        padding: 0;
+    }
+    .custom-japanese-wallet__photoes__secondary
+    {
+        padding: 15px 0 15px 0;
+        flex-direction: row;
+        width: 80%;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    .custom-japanese-wallet__photoes__secondary__1st__img,
+    .custom-japanese-wallet__photoes__secondary__2nd__img,
+    .custom-japanese-wallet__photoes__secondary__3rd__img
+    {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .custom-japanese-wallet__photoes__secondary
+    {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -286,7 +559,7 @@ nav {
     overflow: hidden;
     padding: 2% 3% 2% 3%;
     justify-content: space-between;
-    box-shadow: black 0px 12px 20px -10px;
+    box-shadow: black 0px 12px 20px -10px, black 0px -12px 20px -10px;;
 }
 
 .order-info__logo
@@ -320,29 +593,19 @@ nav {
 @media screen and (max-width: 1085px) {
     .order-info__text
     {
-        width: 75%;
-    }
-}
-
-@media screen and (max-width: 940px) {
-    .order-info__text
-    {
         width: 80%;
     }
-    .order-info__logo__img
+}
+
+@media screen and (max-width: 882px) {
+    .order-info__text
     {
-        left: 15px;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 881px) {
-    .order-info__logo__img
-    {
-        top: -10px;
-    }
-}
 
-@media screen and (max-width: 807px) {
+@media screen and (max-width: 875px) {
     .order-info
     {
         display: grid;
@@ -360,21 +623,14 @@ nav {
     }
     .order-info__logo__img
     {
-        padding-bottom: 3%;
+        padding-bottom: 1.5%;
     }
 }
 
 @media screen and (max-width: 705px) {
     .order-info__logo__img
     {
-        padding-bottom: 3.5%;
-    }
-}
-
-@media screen and (max-width: 637px) {
-    .order-info__logo__img
-    {
-        padding-bottom: 4%;
+        padding-bottom: 2%;
     }
 }
 
@@ -386,7 +642,7 @@ nav {
     .order-info__logo__img
     {
         rotate: 0deg;
-        padding-bottom: 0%;
+        padding: 0 0 0 6%;
     }
 }
 
@@ -397,14 +653,45 @@ nav {
     }
 }
 
-h2
-{
-    text-align: center;
-    margin-bottom: 0;
-    font-weight: 300;
-    font-size: 250%;
-    margin-top: 0%;
-    padding-top: 2%;
+@media screen and (min-width: 2800px) {
+    .order-info__logo__img
+    {
+        top:-45px;
+        height: 250px;
+
+    }
+}
+
+@media screen and (min-width: 3600px) {
+    .order-info__logo__img
+    {
+        top: -30px;
+        left: 50px;
+        height: 200px;
+        rotate: 0deg;
+    }
+}
+
+@media screen and (min-width: 5000px) {
+    .order-info__logo__img
+    {
+        top: -20px;
+    }
+}
+
+@media screen and (min-width: 6000px) {
+    .order-info__logo__img
+    {
+        top: 0px;
+    }
+}
+
+@media screen and (min-width: 7500px) {
+    .order-info__logo__img
+    {
+        left: 150px;
+        scale: 3.5;
+    }
 }
 
 .delivery-and-payment
@@ -416,7 +703,7 @@ h2
 
 .delivery-and-payment__info
 {
-    margin: 0% 5% 2% 5%;
+    margin: 0% 5% 1% 5%;
     display: flex;
     flex-direction: column;
     border-top: 2px solid black;
@@ -617,6 +904,13 @@ h3
     position: relative;
     display: flex;
     align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.footer__contacts > a:hover,
+.footer__social > a:hover
+{
+    font-size: 18px;
 }
 
 .footer__rights
