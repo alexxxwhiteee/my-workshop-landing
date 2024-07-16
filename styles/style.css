@@ -36,7 +36,20 @@ body
     margin: 0;
 }
 
-h2
+.black
+{
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 250%;
+    margin-top: 0%;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    color:white;
+    background-color: black;
+}
+
+.white
 {
     text-align: center;
     margin-bottom: 0;
@@ -334,7 +347,22 @@ nav {
     }
 }
 
-.wallets
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wallets,
+.holders
 {
     margin: 0% 5% 0% 5%;
 }
@@ -347,10 +375,18 @@ nav {
 
 .classic-japanese-wallet,
 .custom-longer-wallet,
-.custom-porte-monnaie
+.custom-porte-monnaie,
+.custom-bifold-wallet,
+.custom-mini-wallet,
+.classic-holder
 {
     border-bottom: 2px dashed black;
 }
+
+/* .trucker-wallet
+{
+    border-bottom: 2px solid black;  
+} */
 
 .product__info
 {
@@ -507,17 +543,50 @@ nav {
     }
 }
 
+.trucker-wallet .product__main-img
+{
+    height: 80%;
+}
 
+.trucker-wallet .product__photoes
+{
+    height: 300px;
+}
 
+.trucker-wallet .product__secondary-photoes
+{
+    height: 80%;
+}
 
+@media screen and (max-width: 900px) {
+    .trucker-wallet .product__photoes
+    {
+        height: 400px;
+    }
+    .trucker-wallet .product__secondary-photoes
+    {
+        height: initial;
+    }
+    .trucker-wallet .product__main-img
+    {
+        height: 100%;
+    }
+    .product__main-photo
+    {
+        height: 270px;
+    }
+}
 
-
-
-
-
-
-
-
+@media screen and (max-width: 400px) {
+    .product__main-photo
+    {
+        height: 200px;
+    }
+    .trucker-wallet .product__photoes
+    {
+        height: 320px;
+    }
+}
 
 
 
