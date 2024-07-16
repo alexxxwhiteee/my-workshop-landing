@@ -283,34 +283,6 @@ nav {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .goods
 {
     z-index: 900;
@@ -355,6 +327,13 @@ nav {
     font-size: 22px;
 }
 
+@media screen and (max-width: 900px) {
+    .order-button
+    {
+        margin-top: 15px;
+    }
+}
+
 .wallets
 {
     margin: 0% 5% 0% 5%;
@@ -366,20 +345,29 @@ nav {
     border-bottom: 2px dashed black;
 }
 
-.custom-japanese-wallet__info
+.custom-japanese-wallet__info,
+.classic-japanese-wallet__info,
+.custom-longer-wallet__info,
+.custom-porte-monnaie__info
 {
     display: flex;
     padding-bottom: 2%;
 }
 
-.custom-japanese-wallet__photoes
+.custom-japanese-wallet__photoes,
+.classic-japanese-wallet__photoes,
+.custom-longer-wallet__photoes,
+.custom-porte-monnaie__photoes
 {
     height: 400px;
     width: 40%;
     display: flex;
 }
 
-.custom-japanese-wallet__photoes__secondary
+.custom-japanese-wallet__photoes__secondary,
+.classic-japanese-wallet__photoes__secondary,
+.custom-longer-wallet__photoes__secondary,
+.custom-porte-monnaie__photoes__secondary
 {
     width: 15%;
     display: flex;
@@ -390,7 +378,8 @@ nav {
 
 .custom-japanese-wallet__photoes__secondary__1st__img,
 .custom-japanese-wallet__photoes__secondary__2nd__img,
-.custom-japanese-wallet__photoes__secondary__3rd__img
+.custom-japanese-wallet__photoes__secondary__3rd__img,
+.custom-porte-monnaie__photoes__secondary__3rd__img
 {
     width: 100%;
     max-height: 130px;
@@ -401,29 +390,54 @@ nav {
 
 .custom-japanese-wallet__photoes__secondary__1st__img:hover,
 .custom-japanese-wallet__photoes__secondary__2nd__img:hover,
-.custom-japanese-wallet__photoes__secondary__3rd__img:hover
+.custom-japanese-wallet__photoes__secondary__3rd__img:hover,
+.classic-japanese-wallet__photoes__secondary__1st__img:hover,
+.classic-japanese-wallet__photoes__secondary__2nd__img:hover,
+.classic-japanese-wallet__photoes__secondary__3rd__img:hover,
+.classic-japanese-wallet__photoes__secondary__4th__img:hover,
+.custom-longer-wallet__photoes__secondary__1st__img:hover,
+.custom-longer-wallet__photoes__secondary__2nd__img:hover,
+.custom-longer-wallet__photoes__secondary__3rd__img:hover,
+.custom-longer-wallet__photoes__secondary__4th__img:hover,
+.custom-porte-monnaie__photoes__secondary__1st__img:hover,
+.custom-porte-monnaie__photoes__secondary__2nd__img:hover,
+.custom-porte-monnaie__photoes__secondary__3rd__img:hover,
+.custom-porte-monnaie__photoes__secondary__4th__img:hover
 {
     scale: 1.2;
     box-shadow: 0px 3px 21px -3px black;
 }
-.custom-japanese-wallet__photoes__main
+
+.custom-japanese-wallet__photoes__main,
+.classic-japanese-wallet__photoes__main,
+.custom-longer-wallet__photoes__main,
+.custom-porte-monnaie__photoes__main
 {
     padding: 0 0 0 7%;
 }
 
-.custom-japanese-wallet__photoes__main__img
+.custom-japanese-wallet__photoes__main__img,
+.classic-japanese-wallet__photoes__main__img,
+.custom-longer-wallet__photoes__main__img,
+.custom-porte-monnaie__photoes__main__img
 {
     height: 100%;
     transition: 0.5s ease-in-out;
 }
 
-.custom-japanese-wallet__photoes__main__img:hover
+.custom-japanese-wallet__photoes__main__img:hover,
+.classic-japanese-wallet__photoes__main__img:hover,
+.custom-longer-wallet__photoes__main__img:hover,
+.custom-porte-monnaie__photoes__main__img:hover
 {
     scale: 1.05;
     box-shadow: 0px 5px 21px -3px black;
 }
 
-.custom-japanese-wallet__description-and-order__button
+.custom-japanese-wallet__description-and-order__button,
+.classic-japanese-wallet__description-and-order__button,
+.custom-longer-wallet__description-and-order__button,
+.custom-porte-monnaie__description-and-order__button
 {
     width: 60%;
     display: flex;
@@ -432,40 +446,64 @@ nav {
 }
 
 @media screen and (min-width: 1800px) {
-    .custom-japanese-wallet__photoes__secondary__1st__img
+    .custom-japanese-wallet__photoes__secondary__1st__img,
+    .classic-japanese-wallet__photoes__secondary__1st__img,
+    .custom-longer-wallet__photoes__secondary__1st__img,
+    .custom-porte-monnaie__photoes__secondary__1st__img
     {
-        max-width: 100px;;
+        max-width: 100px;
     }
 }
 
 @media screen and (max-width: 1280px) {
-    .custom-japanese-wallet__description-and-order__button
+    .custom-japanese-wallet__description-and-order__button,
+    .classic-japanese-wallet__description-and-order__button,
+    .custom-longer-wallet__description-and-order__button,
+    .custom-porte-monnaie__description-and-order__button
     {
         width: 50%;
     }
-        .custom-japanese-wallet__photoes
+    .custom-japanese-wallet__photoes,
+    .classic-japanese-wallet__photoes,
+    .custom-longer-wallet__photoes,
+    .custom-porte-monnaie__photoes
     {
         width: 50%;
         display: flex;
     }
-    .custom-japanese-wallet__photoes__main
+    .custom-japanese-wallet__photoes__main,
+    .classic-japanese-wallet__photoes__main,
+    .custom-longer-wallet__photoes__main,
+    .custom-porte-monnaie__photoes__main
     {
         padding: 0 0 0 5%;
     }
-    .custom-japanese-wallet__photoes__secondary
+    .custom-japanese-wallet__photoes__secondary,
+    .classic-japanese-wallet__photoes__secondary,
+    .custom-longer-wallet__photoes__secondary,
+    .custom-porte-monnaie__photoes__secondary
     {
         width: 15%;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .custom-japanese-wallet__info
+    .custom-japanese-wallet__info,
+    .classic-japanese-wallet__info,
+    .custom-longer-wallet__info,
+    .custom-porte-monnaie__info
     {
         display: flex;
         flex-direction: column;
     }
     .custom-japanese-wallet__photoes,
-    .custom-japanese-wallet__description-and-order__button
+    .custom-japanese-wallet__description-and-order__button,
+    .classic-japanese-wallet__photoes,
+    .classic-japanese-wallet__description-and-order__button,
+    .custom-longer-wallet__photoes,
+    .custom-longer-wallet__description-and-order__button,
+    .custom-porte-monnaie__photoes,
+    .custom-porte-monnaie__description-and-order__button
     {
         width: 100%;
         display: flex;
@@ -473,25 +511,33 @@ nav {
         justify-content: center;
         text-align: center;
     }
-    .custom-japanese-wallet__photoes
+    .custom-japanese-wallet__photoes,
+    .classic-japanese-wallet__photoes,
+    .custom-longer-wallet__photoes,
+    .custom-porte-monnaie__photoes
     {
         flex-direction: column-reverse;
         height: auto;
     }
-    .custom-japanese-wallet__description-and-order__button
+    .custom-japanese-wallet__description-and-order__button,
+    .classic-japanese-wallet__description-and-order__button,
+    .custom-longer-wallet__description-and-order__button,
+    .custom-porte-monnaie__description-and-order__button
     {
         padding-top: 15px;
     }
-    .order-button
-    {
-        margin-top: 15px;
-    }
-    .custom-japanese-wallet__photoes__main
+    .custom-japanese-wallet__photoes__main,
+    .classic-japanese-wallet__photoes__main,
+    .custom-longer-wallet__photoes__main,
+    .custom-porte-monnaie__photoes__main
     {
         height: 300px;
         padding: 0;
     }
-    .custom-japanese-wallet__photoes__secondary
+    .custom-japanese-wallet__photoes__secondary,
+    .classic-japanese-wallet__photoes__secondary,
+    .custom-longer-wallet__photoes__secondary,
+    .custom-porte-monnaie__photoes__secondary
     {
         padding: 15px 0 15px 0;
         flex-direction: row;
@@ -503,7 +549,19 @@ nav {
     }
     .custom-japanese-wallet__photoes__secondary__1st__img,
     .custom-japanese-wallet__photoes__secondary__2nd__img,
-    .custom-japanese-wallet__photoes__secondary__3rd__img
+    .custom-japanese-wallet__photoes__secondary__3rd__img,
+    .classic-japanese-wallet__photoes__secondary__1st__img,
+    .classic-japanese-wallet__photoes__secondary__2nd__img,
+    .classic-japanese-wallet__photoes__secondary__3rd__img,
+    .classic-japanese-wallet__photoes__secondary__4th__img,
+    .custom-longer-wallet__photoes__secondary__1st__img,
+    .custom-longer-wallet__photoes__secondary__2nd__img,
+    .custom-longer-wallet__photoes__secondary__3rd__img,
+    .custom-longer-wallet__photoes__secondary__4th__img,
+    .custom-porte-monnaie__photoes__secondary__1st__img,
+    .custom-porte-monnaie__photoes__secondary__2nd__img,
+    .custom-porte-monnaie__photoes__secondary__3rd__img,
+    .custom-porte-monnaie__photoes__secondary__4th__img
     {
         height: 80px;
         display: flex;
@@ -513,11 +571,60 @@ nav {
 }
 
 @media screen and (max-width: 550px) {
-    .custom-japanese-wallet__photoes__secondary
+    .custom-japanese-wallet__photoes__secondary,
+    .classic-japanese-wallet__photoes__secondary,
+    .custom-longer-wallet__photoes__secondary,
+    .custom-porte-monnaie__photoes__secondary
     {
         width: 100%;
     }
 }
+
+.classic-japanese-wallet,
+.custom-longer-wallet,
+.custom-porte-monnaie
+{
+    border-bottom: 2px dashed black;
+}
+
+.classic-japanese-wallet__photoes__secondary__1st__img,
+.classic-japanese-wallet__photoes__secondary__2nd__img,
+.classic-japanese-wallet__photoes__secondary__3rd__img,
+.classic-japanese-wallet__photoes__secondary__4th__img,
+.custom-longer-wallet__photoes__secondary__1st__img,
+.custom-longer-wallet__photoes__secondary__2nd__img,
+.custom-longer-wallet__photoes__secondary__3rd__img,
+.custom-longer-wallet__photoes__secondary__4th__img,
+.custom-porte-monnaie__photoes__secondary__1st__img,
+.custom-porte-monnaie__photoes__secondary__2nd__img,
+.custom-porte-monnaie__photoes__secondary__3rd__img,
+.custom-porte-monnaie__photoes__secondary__4th__img
+{
+    width: 100%;
+    max-height: 90px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
