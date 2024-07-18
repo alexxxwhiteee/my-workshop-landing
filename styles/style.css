@@ -22,7 +22,7 @@ html
 {
     background-color: white;
     scroll-behavior: smooth;
-    scroll-padding-top: 3%;
+    scroll-padding-top: 145px;
     scrollbar-width: none;
     scrollbar-color: black white;
     font-family: "Overpass", sans-serif;
@@ -53,7 +53,7 @@ body
 {
     text-align: center;
     margin-bottom: 0;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 250%;
     margin-top: 0%;
     padding-top: 2%;
@@ -191,7 +191,7 @@ nav {
     display: flex;
     gap: 20px;
     position: sticky;
-    top: 0px;
+    top: -1px;
     z-index: 1000;
     box-shadow: black 0px 12px 20px -10px;
 }
@@ -235,7 +235,7 @@ nav {
     .nav__button:hover,
     .nav__button:focus
     {
-        box-shadow: rgba(255, 255, 255, 0) 5px 5px 20px -10px, rgba(255, 255, 255, 0) -5px -5px 20px -10px;;
+        box-shadow: black 5px 5px 20px -10px, black -5px -5px 20px -10px;;
     }
 }
 
@@ -246,7 +246,7 @@ nav {
     overflow: hidden;
     padding: 2% 3% 2% 0%;
     justify-content: space-between;
-    box-shadow: black 0px 12px 20px -10px;
+    box-shadow: black 0px 5px 20px -10px;
 }
 
 .about__logo
@@ -296,12 +296,28 @@ nav {
     }
 }
 
+.discount
+{
+    padding: 1% 0 1% 0;
+    position: relative;
+    text-align: center;
+    font-weight: 200;
+    font-size: 180%;
+    box-shadow: black 0px -12px 20px -10px, black 0px 0px 20px -10px;
+    z-index: 800;
+}
+
 .goods
 {
     z-index: 900;
     position: relative;
-    box-shadow: black 0px -12px 20px -10px, black 0px 12px 20px -10px;
+    box-shadow: black 0px -5px 20px -10px, black 0px 12px 20px -10px;
     padding-bottom: 2%;
+}
+
+.goods > div
+{
+    margin: 0% 5% 0% 5%;
 }
 
 .product-text
@@ -359,34 +375,13 @@ nav {
 
 
 
-
-
-.wallets,
-.holders
-{
-    margin: 0% 5% 0% 5%;
-}
-
-.custom-japanese-wallet
-{
-    border-top: 2px solid black;
-    border-bottom: 2px dashed black;
-}
-
-.classic-japanese-wallet,
-.custom-longer-wallet,
-.custom-porte-monnaie,
-.custom-bifold-wallet,
-.custom-mini-wallet,
-.classic-holder
+.wallets > div:not(.trucker-wallet),
+.holders > div:not(.bill-clip),
+.bags > div:not(.custom-cross-body-bag),
+.belts > div:not(.classic-woman-belt)
 {
     border-bottom: 2px dashed black;
 }
-
-/* .trucker-wallet
-{
-    border-bottom: 2px solid black;  
-} */
 
 .product__info
 {
@@ -543,48 +538,145 @@ nav {
     }
 }
 
-.trucker-wallet .product__main-img
+.trucker-wallet .product__photoes,
+.cardholder-v2 .product__photoes,
+.bill-clip .product__photoes
 {
-    height: 80%;
+    height: 270px;
 }
 
-.trucker-wallet .product__photoes
+.custom-cross-body-bag .product__photoes
 {
     height: 300px;
 }
 
-.trucker-wallet .product__secondary-photoes
+.classic-man-belt .product__photoes,
+.classic-woman-belt .product__photoes
 {
-    height: 80%;
+    height: 250px;
+}
+
+@media screen and (max-width: 980px) {
+    .trucker-wallet .product__main-photo,
+    .bill-clip .product__main-photo,
+    .classic-man-belt .product__main-photo,
+    .classic-woman-belt .product__main-photo
+    {
+        padding: 0 0 0 2%;
+    }
 }
 
 @media screen and (max-width: 900px) {
-    .trucker-wallet .product__photoes
+    .trucker-wallet .product__main-photo,
+    .cardholder-v2 .product__main-photo,
+    .bill-clip .product__main-photo,
+    .custom-cross-body-bag .product__main-photo,
+    .classic-man-belt .product__main-photo,
+    .classic-woman-belt .product__main-photo
+    {
+        padding: 0;
+    }
+    .trucker-wallet .product__photoes,
+    .cardholder-v2 .product__photoes,
+    .bill-clip .product__photoes,
+    .custom-cross-body-bag .product__photoes,
+    .classic-man-belt .product__photoes,
+    .classic-woman-belt .product__photoes
     {
         height: 400px;
     }
-    .trucker-wallet .product__secondary-photoes
+    .trucker-wallet .product__secondary-photoes,
+    .cardholder-v2 .product__secondary-photoes,
+    .bill-clip .product__secondary-photoes,
+    .custom-cross-body-bag .product__secondary-photoes,
+    .classic-man-belt .product__secondary-photoes,
+    .classic-woman-belt .product__secondary-photoes
     {
         height: initial;
     }
-    .trucker-wallet .product__main-img
+    .trucker-wallet .product__main-img,
+    .cardholder-v2 .product__main-img,
+    .bill-clip .product__main-img,
+    .custom-cross-body-bag .product__main-img,
+    .classic-man-belt .product__main-img,
+    .classic-woman-belt .product__main-img
     {
         height: 100%;
     }
-    .product__main-photo
+    .trucker-wallet .product__main-photo,
+    .cardholder-v2  .product__main-photo,
+    .bill-clip .product__main-photo,
+    .custom-cross-body-bag .product__main-photo,
+    .classic-man-belt .product__main-photo,
+    .classic-woman-belt .product__main-photo
     {
-        height: 270px;
+        height: 290px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .product__main-photo
+    .trucker-wallet .product__main-photo,
+    .bill-clip .product__main-photo
     {
         height: 200px;
     }
-    .trucker-wallet .product__photoes
+    .trucker-wallet .product__photoes,
+    .bill-clip .product__photoes
     {
-        height: 320px;
+        height: 310px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .cardholder-v2 .product__main-photo
+    {
+        height: 230px;
+    }
+    .cardholder-v2 .product__photoes
+    {
+        height: 340px;
+    }
+} 
+
+@media screen and (max-width: 650px) {
+    .custom-cross-body-bag .product__secondary-photoes
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .custom-cross-body-bag .product__small-size-img
+    {
+        height: 50px;
+    }
+    .custom-cross-body-bag .product__photoes
+    {
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .custom-cross-body-bag .product__main-photo
+    {
+        height: 220px;
+    }
+    .custom-cross-body-bag .product__photoes
+    {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .classic-man-belt .product__main-photo,
+    .classic-woman-belt .product__main-photo
+    {
+        height: 200px;
+    }
+    .classic-man-belt .product__photoes,
+    .classic-woman-belt .product__photoes
+    {
+        height: 310px;
     }
 }
 
@@ -622,6 +714,76 @@ nav {
 
 
 
+
+
+
+
+
+/* . .product__photoes
+{
+    height: 270px;
+}
+
+@media screen and (max-width: 980px) {
+    . .product__main-photo
+    {
+        padding: 0 0 0 2%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    . .product__main-photo
+    {
+        padding: 0;
+    }
+    . .product__photoes
+    {
+        height: 400px;
+    }
+    . .product__secondary-photoes
+    {
+        height: initial;
+    }
+    . .product__main-img
+    {
+        height: 100%;
+    }
+    . .product__main-photo
+    {
+        height: 290px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    . .product__main-photo
+    {
+        height: 200px;
+    }
+    . .product__photoes
+    {
+        height: 310px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+*
+{
+
+
+
+
+    /* outline: 1px solid red !important; */
+
+
+}
 
 
 
@@ -636,7 +798,7 @@ nav {
     overflow: hidden;
     padding: 2% 3% 2% 3%;
     justify-content: space-between;
-    box-shadow: black 0px 12px 20px -10px, black 0px -12px 20px -10px;;
+    box-shadow: black 0px 12px 20px -10px, black 0px 0px 20px -10px;;
 }
 
 .order-info__logo
