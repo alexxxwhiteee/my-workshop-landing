@@ -378,7 +378,10 @@ nav {
 .wallets > div:not(.trucker-wallet),
 .holders > div:not(.bill-clip),
 .bags > div:not(.custom-cross-body-bag),
-.belts > div:not(.classic-woman-belt)
+.belts > div:not(.classic-woman-belt),
+.accessories > div:not(.airpods-case),
+.mixed-goods > div:not(.edc-tray),
+.additional-services > div
 {
     border-bottom: 2px dashed black;
 }
@@ -394,6 +397,29 @@ nav {
     height: 400px;
     width: 40%;
     display: flex;
+}
+
+.trucker-wallet .product__photoes,
+.cardholder-v2 .product__photoes,
+.bill-clip .product__photoes,
+.classic-patches .product__photoes
+{
+    height: 270px;
+}
+
+.custom-cross-body-bag .product__photoes,
+.airpods-case .product__photoes,
+.knife-case .product__photoes,
+.edc-tray .product__photoes
+{
+    height: 300px;
+}
+
+.classic-man-belt .product__photoes,
+.classic-woman-belt .product__photoes,
+.rune-bag .product__photoes
+{
+    height: 250px;
 }
 
 .product__secondary-photoes
@@ -433,6 +459,11 @@ nav {
 .product__main-photo
 {
     padding: 0 0 0 7%;
+}
+
+.airpods-case .product__main-photo 
+{
+    padding: 0;
 }
 
 .product__main-img
@@ -538,29 +569,15 @@ nav {
     }
 }
 
-.trucker-wallet .product__photoes,
-.cardholder-v2 .product__photoes,
-.bill-clip .product__photoes
-{
-    height: 270px;
-}
-
-.custom-cross-body-bag .product__photoes
-{
-    height: 300px;
-}
-
-.classic-man-belt .product__photoes,
-.classic-woman-belt .product__photoes
-{
-    height: 250px;
-}
-
 @media screen and (max-width: 980px) {
     .trucker-wallet .product__main-photo,
     .bill-clip .product__main-photo,
     .classic-man-belt .product__main-photo,
-    .classic-woman-belt .product__main-photo
+    .classic-woman-belt .product__main-photo,
+    .rune-bag .product__main-photo,
+    .custom-patches .product__main-photo,
+    .knife-case .product__main-photo,
+    .edc-tray .product__main-photo
     {
         padding: 0 0 0 2%;
     }
@@ -572,7 +589,13 @@ nav {
     .bill-clip .product__main-photo,
     .custom-cross-body-bag .product__main-photo,
     .classic-man-belt .product__main-photo,
-    .classic-woman-belt .product__main-photo
+    .classic-woman-belt .product__main-photo,
+    .airpods-case .product__main-photo,
+    .rune-bag .product__main-photo,
+    .custom-patches .product__main-photo,
+    .classic-patches .product__main-photo,
+    .knife-case .product__main-photo,
+    .edc-tray .product__main-photo
     {
         padding: 0;
     }
@@ -581,16 +604,29 @@ nav {
     .bill-clip .product__photoes,
     .custom-cross-body-bag .product__photoes,
     .classic-man-belt .product__photoes,
-    .classic-woman-belt .product__photoes
+    .classic-woman-belt .product__photoes,
+    .rune-bag .product__photoes,
+    .classic-patches .product__photoes,
+    .knife-case .product__photoes,
+    .edc-tray .product__photoes
     {
         height: 400px;
+    }
+    .airpods-case .product__photoes
+    {
+        height: 290px;
     }
     .trucker-wallet .product__secondary-photoes,
     .cardholder-v2 .product__secondary-photoes,
     .bill-clip .product__secondary-photoes,
     .custom-cross-body-bag .product__secondary-photoes,
     .classic-man-belt .product__secondary-photoes,
-    .classic-woman-belt .product__secondary-photoes
+    .classic-woman-belt .product__secondary-photoes,
+    .airpods-case .product__secondary-photoes,
+    .rune-bag .product__secondary-photoes,
+    .classic-patches .product__secondary-photoes,
+    .knife-case .product__secondary-photoes,
+    .edc-tray .product__secondary-photoes
     {
         height: initial;
     }
@@ -599,7 +635,12 @@ nav {
     .bill-clip .product__main-img,
     .custom-cross-body-bag .product__main-img,
     .classic-man-belt .product__main-img,
-    .classic-woman-belt .product__main-img
+    .classic-woman-belt .product__main-img,
+    .airpods-case .product__main-img,
+    .rune-bag .product__main-img,
+    .classic-patches .product__main-img,
+    .knife-case .product__main-img,
+    .edc-tray .product__main-img
     {
         height: 100%;
     }
@@ -608,35 +649,16 @@ nav {
     .bill-clip .product__main-photo,
     .custom-cross-body-bag .product__main-photo,
     .classic-man-belt .product__main-photo,
-    .classic-woman-belt .product__main-photo
+    .classic-woman-belt .product__main-photo,
+    .airpods-case .product__main-photo,
+    .rune-bag .product__main-photo,
+    .classic-patches .product__main-photo,
+    .knife-case .product__main-photo,
+    .edc-tray .product__main-photo
     {
         height: 290px;
     }
 }
-
-@media screen and (max-width: 400px) {
-    .trucker-wallet .product__main-photo,
-    .bill-clip .product__main-photo
-    {
-        height: 200px;
-    }
-    .trucker-wallet .product__photoes,
-    .bill-clip .product__photoes
-    {
-        height: 310px;
-    }
-}
-
-@media screen and (max-width: 340px) {
-    .cardholder-v2 .product__main-photo
-    {
-        height: 230px;
-    }
-    .cardholder-v2 .product__photoes
-    {
-        height: 340px;
-    }
-} 
 
 @media screen and (max-width: 650px) {
     .custom-cross-body-bag .product__secondary-photoes
@@ -656,6 +678,45 @@ nav {
     }
 }
 
+@media screen and (max-width: 450px) {
+    .classic-man-belt .product__main-photo,
+    .classic-woman-belt .product__main-photo,
+    .airpods-case .product__main-photo,
+    .rune-bag .product__main-photo
+    {
+        height: 200px;
+    }
+    .classic-man-belt .product__photoes,
+    .classic-woman-belt .product__photoes,
+    .rune-bag .product__photoes
+    {
+        height: 310px;
+    }
+    .airpods-case .product__photoes
+    {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .trucker-wallet .product__main-photo,
+    .bill-clip .product__main-photo,
+    .classic-patches .product__main-photo,
+    .knife-case .product__main-photo,
+    .edc-tray .product__main-photo
+    {
+        height: 200px;
+    }
+    .trucker-wallet .product__photoes,
+    .bill-clip .product__photoes,
+    .classic-patches .product__photoes,
+    .knife-case .product__photoes,
+    .edc-tray .product__photoes
+    {
+        height: 310px;
+    }
+}
+
 @media screen and (max-width: 350px) {
     .custom-cross-body-bag .product__main-photo
     {
@@ -667,18 +728,39 @@ nav {
     }
 }
 
-@media screen and (max-width: 450px) {
-    .classic-man-belt .product__main-photo,
-    .classic-woman-belt .product__main-photo
+@media screen and (max-width: 340px) {
+    .cardholder-v2 .product__main-photo
     {
-        height: 200px;
+        height: 230px;
     }
-    .classic-man-belt .product__photoes,
-    .classic-woman-belt .product__photoes
+    .cardholder-v2 .product__photoes
     {
-        height: 310px;
+        height: 340px;
     }
-}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -778,9 +860,9 @@ nav {
 {
 
 
+/* 
 
-
-    /* outline: 1px solid red !important; */
+    outline: 1px solid red !important; */
 
 
 }
