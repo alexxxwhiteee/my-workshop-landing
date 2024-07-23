@@ -52,6 +52,13 @@ body
     background-color: black;
 }
 
+@media screen and (max-width: 900px) {
+    .black
+    {
+        font-size: 200%;
+    }
+}
+
 .white
 {
     text-align: center;
