@@ -1,14 +1,9 @@
 *
 {
+    /* outline: 1px solid red !important; */
     animation-name: Appearance;
     animation-duration: 2s;
     transition-timing-function: ease;
-
-
-
-    /* outline: 1px solid red !important; */
-
-
 }
 
 @keyframes Appearance {
@@ -16,7 +11,6 @@
   
     100% {opacity: 1;}
   }
-
 
 html
 {
@@ -29,6 +23,15 @@ html
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
+}
+
+@media screen and (min-width: 4000px) {
+    html
+    {
+        max-width: 4000px;
+        margin: 0px auto;
+        
+    }
 }
 
 body
@@ -111,8 +114,6 @@ header
     justify-content: space-between;
 }
 
-
-
 .header__logo__img
 {
     display: flex;
@@ -121,7 +122,6 @@ header
     padding-bottom: 0.5%;
     width: 400px;
 }
-
 
 .header__nav
 {
@@ -155,7 +155,6 @@ header
     background-color: white;
     font-size: 17px;
 }
-
 
 @media screen and (max-width: 970px) {
     .header__logo
@@ -282,7 +281,7 @@ nav {
     .about__logo
     {
         background: url('/images/about__logo__img.jpg') no-repeat;
-        box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.9);
+        box-shadow: inset 0px 0px 20px 10px black;
         width: 100%;
         height: 150px;
         background-size: 500px auto;
@@ -363,25 +362,13 @@ nav {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .wallets > div:not(.trucker-wallet),
 .holders > div:not(.bill-clip),
 .bags > div:not(.custom-cross-body-bag),
 .belts > div:not(.classic-woman-belt),
 .accessories > div:not(.airpods-case),
 .mixed-goods > div:not(.edc-tray),
-.additional-services > div
+.additional-services > div:not(.embossing)
 {
     border-bottom: 2px dashed black;
 }
@@ -417,7 +404,8 @@ nav {
 
 .classic-man-belt .product__photoes,
 .classic-woman-belt .product__photoes,
-.rune-bag .product__photoes
+.rune-bag .product__photoes,
+.embossing .product__photoes
 {
     height: 250px;
 }
@@ -577,7 +565,9 @@ nav {
     .rune-bag .product__main-photo,
     .custom-patches .product__main-photo,
     .knife-case .product__main-photo,
-    .edc-tray .product__main-photo
+    .edc-tray .product__main-photo,
+    .concho .product__main-photo,
+    .embossing .product__main-photo
     {
         padding: 0 0 0 2%;
     }
@@ -595,7 +585,9 @@ nav {
     .custom-patches .product__main-photo,
     .classic-patches .product__main-photo,
     .knife-case .product__main-photo,
-    .edc-tray .product__main-photo
+    .edc-tray .product__main-photo,
+    .concho .product__main-photo,
+    .embossing .product__main-photo
     {
         padding: 0;
     }
@@ -608,7 +600,8 @@ nav {
     .rune-bag .product__photoes,
     .classic-patches .product__photoes,
     .knife-case .product__photoes,
-    .edc-tray .product__photoes
+    .edc-tray .product__photoes,
+    .embossing .product__photoes
     {
         height: 400px;
     }
@@ -626,7 +619,8 @@ nav {
     .rune-bag .product__secondary-photoes,
     .classic-patches .product__secondary-photoes,
     .knife-case .product__secondary-photoes,
-    .edc-tray .product__secondary-photoes
+    .edc-tray .product__secondary-photoes,
+    .embossing .product__secondary-photoes
     {
         height: initial;
     }
@@ -640,7 +634,8 @@ nav {
     .rune-bag .product__main-img,
     .classic-patches .product__main-img,
     .knife-case .product__main-img,
-    .edc-tray .product__main-img
+    .edc-tray .product__main-img,
+    .embossing .product__main-img
     {
         height: 100%;
     }
@@ -654,7 +649,8 @@ nav {
     .rune-bag .product__main-photo,
     .classic-patches .product__main-photo,
     .knife-case .product__main-photo,
-    .edc-tray .product__main-photo
+    .edc-tray .product__main-photo,
+    .embossing .product__main-photo
     {
         height: 290px;
     }
@@ -682,13 +678,15 @@ nav {
     .classic-man-belt .product__main-photo,
     .classic-woman-belt .product__main-photo,
     .airpods-case .product__main-photo,
-    .rune-bag .product__main-photo
+    .rune-bag .product__main-photo,
+    .embossing .product__main-photo
     {
         height: 200px;
     }
     .classic-man-belt .product__photoes,
     .classic-woman-belt .product__photoes,
-    .rune-bag .product__photoes
+    .rune-bag .product__photoes,
+    .embossing .product__photoes
     {
         height: 310px;
     }
@@ -738,139 +736,6 @@ nav {
         height: 340px;
     }
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* . .product__photoes
-{
-    height: 270px;
-}
-
-@media screen and (max-width: 980px) {
-    . .product__main-photo
-    {
-        padding: 0 0 0 2%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    . .product__main-photo
-    {
-        padding: 0;
-    }
-    . .product__photoes
-    {
-        height: 400px;
-    }
-    . .product__secondary-photoes
-    {
-        height: initial;
-    }
-    . .product__main-img
-    {
-        height: 100%;
-    }
-    . .product__main-photo
-    {
-        height: 290px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    . .product__main-photo
-    {
-        height: 200px;
-    }
-    . .product__photoes
-    {
-        height: 310px;
-    }
-} */
-
-
-
-
-
-
-
-
-
-
-*
-{
-
-
-/* 
-
-    outline: 1px solid red !important; */
-
-
-}
-
-
-
-
-
 
 .order-info
 {   
@@ -980,38 +845,6 @@ nav {
         top:-45px;
         height: 250px;
 
-    }
-}
-
-@media screen and (min-width: 3600px) {
-    .order-info__logo__img
-    {
-        top: -30px;
-        left: 50px;
-        height: 200px;
-        rotate: 0deg;
-    }
-}
-
-@media screen and (min-width: 5000px) {
-    .order-info__logo__img
-    {
-        top: -20px;
-    }
-}
-
-@media screen and (min-width: 6000px) {
-    .order-info__logo__img
-    {
-        top: 0px;
-    }
-}
-
-@media screen and (min-width: 7500px) {
-    .order-info__logo__img
-    {
-        left: 150px;
-        scale: 3.5;
     }
 }
 
@@ -1336,7 +1169,7 @@ h3
     border-radius: 10px;
 }
    
-  #back-to-top:hover {
+#back-to-top:hover {
     color: white;
     background: black;
     border: 1px solid;

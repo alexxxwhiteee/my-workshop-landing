@@ -1,18 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
     const backToTop = document.getElementById("back-to-top");
+    const maxWidth = 4000;
    
-    // Показать/скрыть кнопку при прокрутке страницы
+    
     window.addEventListener("scroll", function () {
-      if (window.scrollY > 100) {
-        backToTop.style.display = "block";
-      } else {
+      if (window.scrollY < 100 || window.outerWidth > maxWidth) {
         backToTop.style.display = "none";
+      } else {
+        backToTop.style.display = "block";
       }
     });
    
-    // Плавная прокрутка при клике на кнопку
+    
     backToTop.addEventListener("click", function (event) {
       event.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   });
+
+
