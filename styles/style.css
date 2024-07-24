@@ -1163,22 +1163,6 @@ h3
     left:-37px;
 }
 
-/* #back-to-top {
-    text-decoration: none;
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-    border: 1px solid;
-    display: none;
-    font-size: 20px;
-    color: black;
-    background: white;
-    padding: 4px 10px 5px 10px;
-    cursor: pointer;
-    z-index: 1000;
-    border-radius: 10px;
-} */
-
 #back-to-top {
     position: fixed;
     bottom: 50px;
