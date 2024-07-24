@@ -1188,7 +1188,7 @@ h3
     font-size: 20px;
     color: black;
     background: white;
-    padding: 5px 6px 5px 6px;
+    padding: 5px 5px 5px 5px;
     cursor: pointer;
     z-index: 1000;
     border-radius: 10px;
@@ -1215,7 +1215,7 @@ h3
         text-decoration: none;
         border-radius: 10px;
         background-image: url('/images/icons/back-to-top-icon-white.png');
-        padding: 6px 7px 6px 7px;
+        padding: 6px 6px 6px 6px;
         height: 30px;
         width: 30px;
         background-position: center;
