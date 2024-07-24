@@ -156,11 +156,13 @@ header
     font-weight: 200;
 }
 
-.header__nav__button:hover
+@media screen and (min-width: 1207px) {
+    .header__nav__button:hover
 {
     color: black;
     background-color: white;
     font-size: 17px;
+}
 }
 
 @media screen and (max-width: 970px) {
@@ -218,14 +220,16 @@ nav {
     text-decoration: none;
 }
 
-.nav__button:hover,
-.nav__button:focus
+@media screen and (min-width: 1207px) {
+    .nav__button:hover,
+    .nav__button:focus
 {
     background-color: #fff;
     color: black;
     width: 150px;
     font-weight: 700;
     box-shadow: black 5px 5px 20px -10px, black -5px -5px 20px -10px;
+}
 }
 
 @media screen and (max-width: 1206px) {
@@ -236,12 +240,9 @@ nav {
     .nav__button
     {
        border: 0.5px solid black;
-       margin: -1px 0px -1px 0px;  
-    }
-    .nav__button:hover,
-    .nav__button:focus
-    {
-        box-shadow: black 5px 5px 20px -10px, black -5px -5px 20px -10px;;
+       margin: -1px 0px -1px 0px; 
+       height: 15px;
+       min-width: 160px; 
     }
 }
 
@@ -347,13 +348,15 @@ nav {
     transition: 0.5s ease-in-out;
 }
 
-.product__order-button:hover,
-.product__order-button:focus
+@media screen and (min-width: 1207px) {
+    .product__order-button:hover,
+    .product__order-button:focus
 {
     color:black;
     background-color: white;
     border: 2px solid black;
     font-size: 22px;
+}
 }
 
 @media screen and (max-width: 900px) {
@@ -438,11 +441,13 @@ nav {
     transition: 0.5s ease-in-out;
 }
 
-.product__small-size-img:hover,
-.product__big-size-img:hover
+@media screen and (min-width: 1207px) {
+    .product__small-size-img:hover,
+    .product__big-size-img:hover
 {
     scale: 1.2;
     box-shadow: 0px 3px 21px -3px black;
+}
 }
 
 .product__main-photo
@@ -461,10 +466,12 @@ nav {
     transition: 0.5s ease-in-out;
 }
 
-.product__main-img:hover
+@media screen and (min-width: 1207px) {
+    .product__main-img:hover
 {
     scale: 1.05;
     box-shadow: 0px 5px 21px -3px black;
+}
 }
 
 .product__description
@@ -1020,7 +1027,7 @@ footer
     }
   }
 
-  @media screen and (max-width: 479px) {
+@media screen and (max-width: 479px) {
     .footer__contacts,
     .footer__social
 {
@@ -1062,10 +1069,12 @@ h3
     transition: 0.3s ease-in-out;
 }
 
-.footer__contacts > a:hover,
-.footer__social > a:hover
+@media screen and (min-width: 1207px) {
+    .footer__contacts > a:hover,
+    .footer__social > a:hover
 {
     font-size: 18px;
+}
 }
 
 .footer__rights
@@ -1154,7 +1163,7 @@ h3
     left:-37px;
 }
 
-#back-to-top {
+/* #back-to-top {
     text-decoration: none;
     position: fixed;
     bottom: 50px;
@@ -1168,12 +1177,49 @@ h3
     cursor: pointer;
     z-index: 1000;
     border-radius: 10px;
-}
-   
-#back-to-top:hover {
-    color: white;
-    background: black;
+} */
+
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
     border: 1px solid;
-    text-decoration: none;
+    display: none;
+    font-size: 20px;
+    color: black;
+    background: white;
+    padding: 5px 6px 5px 6px;
+    cursor: pointer;
+    z-index: 1000;
     border-radius: 10px;
+    background-image: url('/images/icons/back-to-top-icon-black.png');
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+@media screen and (max-width: 1206px) {
+    #back-to-top {
+    bottom: 20px;
+    right: 20px;
+}
+}
+
+@media screen and (min-width: 1207px) {
+    #back-to-top:hover {
+        color: white;
+        background: black;
+        border: 1px solid;
+        text-decoration: none;
+        border-radius: 10px;
+        background-image: url('/images/icons/back-to-top-icon-white.png');
+        padding: 6px 7px 6px 7px;
+        height: 30px;
+        width: 30px;
+        background-position: center;
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
 }
