@@ -16,7 +16,7 @@ html
 {
     background-color: white;
     scroll-behavior: smooth;
-    scroll-padding-top: 145px;
+    /* scroll-padding-top: 145px; */
     scrollbar-width: none;
     scrollbar-color: black white;
     font-family: "Overpass", sans-serif;
@@ -305,7 +305,7 @@ nav {
 
 .discount
 {
-    padding: 1% 0 1% 0;
+    padding: 1% 5% 1% 5%;
     position: relative;
     text-align: center;
     font-weight: 200;
@@ -430,6 +430,7 @@ nav {
     display: flex;
     justify-content: center;
     transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .product__big-size-img
@@ -439,7 +440,10 @@ nav {
     display: flex;
     justify-content: center;
     transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
+
+
 
 @media screen and (min-width: 1207px) {
     .product__small-size-img:hover,
@@ -464,6 +468,7 @@ nav {
 {
     height: 100%;
     transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1207px) {
@@ -1206,4 +1211,46 @@ h3
         background-size: contain;
         background-repeat:no-repeat;
     }
+}
+
+
+.div__img
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 9000;
+    animation-name: none;
+    background-color: rgba(0, 0, 0, 0.850)
+}
+
+.btn
+{
+    content: "";
+    height: 50px;
+    width: 50px;
+    margin-top: 15px;
+    right: 15px;
+    position: absolute;
+    z-index: 9000;
+    animation-name: none;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url('/images/icons/close-img-view.png');
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.img__view
+{
+    z-index: 9000;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    animation-name: none;
 }
