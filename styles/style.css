@@ -16,7 +16,6 @@ html
 {
     background-color: white;
     scroll-behavior: smooth;
-    /* scroll-padding-top: 145px; */
     scrollbar-width: none;
     scrollbar-color: black white;
     font-family: "Overpass", sans-serif;

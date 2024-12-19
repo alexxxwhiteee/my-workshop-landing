@@ -106,4 +106,3 @@ function getBrowserName(userAgent) {
   }
   
 getBrowserName(userAgent)
-
