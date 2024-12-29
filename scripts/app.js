@@ -20,8 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  document.addEventListener("DOMContentLoaded", function () {
-    window.addEventListener("resize", function (event) {
+  document.addEventListener("DOMContentLoaded", function (event) {
         event.preventDefault();
 
         const html = document.querySelector("html");
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const h = document.getElementsByClassName("black")
         let hHeight = h[0].offsetHeight
         html.style.scrollPaddingTop = `${navHeight+hHeight+24}px`;
-    });
     });
 
 
