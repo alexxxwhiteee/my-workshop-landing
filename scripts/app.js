@@ -77,30 +77,3 @@ button.addEventListener("click", function (event) {
         document.body.style.overflow = "auto";
         });
 }); 
-
-
-
-
-let userAgent = navigator.userAgent
-
-function getBrowserName(userAgent) {
-    if (userAgent.includes("Firefox")) {
-        return;
-    } else if (userAgent.includes("SamsungBrowser")) {
-        return;
-    } else if (userAgent.includes("Opera") || userAgent.includes("OPR")) {
-        return;
-    } else if (userAgent.includes("Edge")) {
-        return;
-    } else if (userAgent.includes("Edg")) {
-        return;
-    } else if (userAgent.includes("Chrome")) {
-        return;
-    } else if (userAgent.includes("Safari")) {
-        alert ("Возможно некорректное отображение на устройствах под управлением macOS и iOS");
-    } else {
-      return;
-    }
-  }
-  
-getBrowserName(userAgent)
