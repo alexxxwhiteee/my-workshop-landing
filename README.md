@@ -1,6 +1,6 @@
 <div align="center">
 
-# <img src="images/gh-icons/left-spear.png" height="40"> Gungnir Leather <img src="images/gh-icons/right-spear.png" height="40">
+# <img src="images/gh-icons/left-spear.png" height="20"> Gungnir Leather <img src="images/gh-icons/right-spear.png" height="20">
 
 </div>
 
@@ -11,7 +11,7 @@
 </div>
 
 
-Это pet-project, функционал которого заключается в кодировании или расшифровке текстового сообщения.
+Лендинг для моего хобби — изготовления стильных, практичных и качественных изделий из натуральной кожи.
 
 
 <div align="center">
